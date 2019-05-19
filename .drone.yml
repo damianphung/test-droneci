@@ -1,8 +1,6 @@
 pipeline:
   run-test-suite:
     image: ubuntu:latest
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
     commands:
       - apt-get update && apt-get -y install autoconf-archive automake-1.15 autoconf2.64 build-essential check
       - make
